@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@color/paintBackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/paintBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/paintBackground"
+                android:src="@drawable/logo_header" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:background="@color/paintBackground"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:gravity="right"
+                android:background="@color/paintBackground"
+                android:orientation="horizontal">
+                <ToggleButton
+                    android:id="@+id/imgBtnCursorMove"
+                    style="@style/button_paint_activity"
+                    android:drawableTop="@drawable/selector_button_icon_imgbtncursormode"
+                    />
+                <Button
+                    android:id="@+id/imgBtnUndo"
+                    style="@style/button_paint_activity"
+                    android:drawableTop="@drawable/selector_button_icon_imgbtnundo" />
+                <Button
+                    android:id="@+id/imgBtnRedo"
+                    style="@style/button_paint_activity"
+                    android:drawableTop="@drawable/selector_button_icon_imgbtnredo" />
+                <Button
+                    android:id="@+id/imgBtnDel"
+                    style="@style/button_paint_activity"
+                    android:drawableTop="@drawable/selector_button_icon_imgbtndel" />
+                <Button
+
+                    android:id="@+id/imgBtnSetting"
+                    style="@style/button_paint_activity"
+                    android:drawableTop="@drawable/selector_button_icon_imgbtnsetting" />
+
+                <Button
+                    android:id="@+id/imgBtnSave"
+                    style="@style/button_paint_activity"
+                    android:drawableTop="@drawable/selector_button_icon_imgbtnsave" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+
+            android:background="@color/paintBackground"
+           android:gravity="top"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ToggleButton
+                android:id="@+id/imgBrush"
+                style="@style/togglebutton_paint_activity"
+                android:drawableLeft="@drawable/selector_button_icon_imgbtnbrush"
+                />
+
+            <ToggleButton
+                android:id="@+id/imgBtnEyedropper"
+                style="@style/togglebutton_paint_activity"
+                android:drawableLeft="@drawable/selector_button_icon_imgbtneyedropper"
+                />
+
+            <ToggleButton
+                android:id="@+id/imgBtnErase"
+                style="@style/togglebutton_paint_activity"
+                android:drawableLeft="@drawable/selector_button_icon_imgbtneraser"
+                />
+
+            <ToggleButton
+                android:id="@+id/imgBtnFormatPaint"
+                style="@style/togglebutton_paint_activity"
+                android:drawableLeft="@drawable/selector_button_icon_imgbtnpaint"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                >
+                <Button
+                    android:id="@+id/imgBtnChangeColor1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:drawableTop="@color/paintBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                >
+                <Button
+                    android:id="@+id/imgBtnChangeColor2"
+                    style="@style/button_paint_activity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:drawableTop="@color/paintBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                >
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imgBtnChangeColor3"
+                    style="@style/button_paint_activity"
+                    android:drawableTop="@color/paintBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                >
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imgBtnBaseChangeColor"
+                 />
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <dfgden.pxart.com.pxart.customviews.PaintView
+                    android:id="@+id/paintModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/imgBtnBorderNone"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="15dp"-->
+    <!--android:background="#a69e2f"-->
+    <!--android:src="@drawable/ic_border_none" />-->
+
+</LinearLayout>

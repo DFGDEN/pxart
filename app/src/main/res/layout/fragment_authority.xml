@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="#757575"
+        android:text="FACEBOOK"
+        android:id="@+id/btnFacebook"
+        android:background="@drawable/selector_button_background_authority"
+        android:drawableLeft="@drawable/selector_button_icon_fb"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="#757575"
+        android:text="Вконтакте"
+        android:id="@+id/btnVk"
+        android:background="@drawable/selector_button_background_authority"
+        android:drawableLeft="@drawable/selector_button_icon_vk"
+        android:layout_below="@+id/btnFacebook"
+        android:layout_alignLeft="@+id/btnFacebook"
+        android:layout_alignStart="@+id/btnFacebook"
+        android:layout_marginTop="15dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="#757575"
+        android:text="INSTAGRAM"
+        android:id="@+id/btnInstagram"
+        android:background="@drawable/selector_button_background_authority"
+        android:drawableLeft="@drawable/selector_button_icon_instagram"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btnVk"
+        android:layout_alignLeft="@+id/btnVk"
+        android:layout_alignStart="@+id/btnVk" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fragment_authoruty_title"
+        android:id="@+id/textView5"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_account"
+        android:title="name" />
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/nav_header_galery">
+            <menu>
+                <item
+                    android:id="@+id/nav_new_pattern"
+
+                    android:title="@string/nav_new_pattern" />
+                <item
+                    android:id="@+id/nav_best_pattern"
+
+                    android:title="@string/nav_best_pattern" />
+                <item
+                    android:id="@+id/nav_most_commented"
+
+                    android:title="@string/nav_most_commented" />
+                <item
+                    android:id="@+id/nav_new_unregregistered"
+
+                    android:title="@string/nav_new_unregregistered" />
+                <item
+                    android:id="@+id/nav_best_unregregistered"
+                    android:title="@string/nav_best_unregregistered" />
+            </menu>
+        </item>
+    </group>
+
+
+    <item android:title="@string/nav_header_authority">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_login"
+                android:title="@string/nav_login" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_header_authority">
+        <menu>
+            <item
+                android:id="@+id/nav_leave"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/nav_logout" />
+
+        </menu>
+    </item>
+
+</menu>

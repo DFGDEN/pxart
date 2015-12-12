@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adaptorContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundPattern"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_comment_item"></include>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/patternLayout"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+    </LinearLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorBackgroundPattern"
+        android:orientation="horizontal">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundPattern"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp">
+
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_comment_multiple_outline" />
+
+            <TextView
+                android:id="@+id/txtViewPatternComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingBottom="9dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@color/colorBackgroundPattern"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/imgLike"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_heart_outline" />
+            <TextView
+                android:id="@+id/txtViewPatternLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingBottom="9dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

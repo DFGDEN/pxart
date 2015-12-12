@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linLayoutPlan"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/settingdialog_txtHeight"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/spinnerCountCellHeight"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/spinnerCountCellWidth"
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="150dp"
+                android:text="@string/settingdialog_txtWidth"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/spinnerCountCellWidth"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/spinnerCountCellHeight"
+                android:text="@string/settingdialog_txtLine"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/spinnerCountLine"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/textView3" />
+
+            <Spinner
+                android:id="@+id/spinnerCountColumn"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@+id/spinnerCountCellWidth"
+                android:text="@string/settingdialog_txtColumn"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settingdialog_buttonCancel" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settingdialog_buttonOk" />
+    </LinearLayout>
+</LinearLayout>

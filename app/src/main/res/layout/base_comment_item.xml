@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundPattern">
+
+
+    <ImageView
+        android:id="@+id/imageViewAuthor"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txtAuthorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imageViewAuthor"
+        android:layout_toRightOf="@+id/imageViewAuthor"
+        android:text="name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:id="@+id/txtPatternName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/imageViewAuthor"
+        android:layout_toRightOf="@+id/imageViewAuthor"
+        android:text="comment"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:id="@+id/txtAuthorTimePost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPatternName"
+        android:layout_alignStart="@+id/txtPatternName"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txtPatternName"
+        android:text="time"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/imgButtonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtAuthorTimePost"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:background="@color/colorBackgroundPattern"
+        android:src="@drawable/ic_dots_vertical" />
+
+</RelativeLayout>

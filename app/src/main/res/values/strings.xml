@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Pxart</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_galery">Галерея</string>
+    <string name="nav_best_pattern">Лучшие</string>
+    <string name="nav_new_pattern">Новые</string>
+    <string name="nav_new_unregregistered">Новые анонимные</string>
+    <string name="nav_best_unregregistered">Лучшие анонимные</string>
+    <string name="nav_most_commented">Наиболее комментируемые</string>
+
+
+    <string name="action_remove_save_pattern">Удалить сохраненный паттерн</string>
+    <string name="settingdialog_buttonOk">Применить</string>
+    <string name="settingdialog_buttonCancel">Отмена</string>
+    <string name="settingdialog_txtLine">Строки:</string>
+    <string name="settingdialog_txtColumn">Столбцы:</string>
+    <string name="settingdialog_txtWidth">Ширина:</string>
+    <string name="settingdialog_txtHeight">Высота:</string>
+    <string name="settingdialog_title">Настройки холста</string>
+    <string name="dialogsave_draft">Черновик</string>
+    <string name="savedialog_btnsave">Сохранить</string>
+    <string name="mainactivity_logo">30pxart</string>
+    <string name="basepatternadaptor_wallpapererror">Не удалось установить обои</string>
+    <string name="basepatternadaptor_authornoname">Аноним</string>
+    <string name="basepatternadaptor_patternnoname">без названия</string>
+    <string name="popupmenu_item1">Сделать обоями</string>
+    <string name="popupmenu_item2">Редактировать паттерн</string>
+    <string name="basepatternadaptor_subscribe">Подписаться</string>
+    <string name="basepatternadaptor_upsubscribe">Отписаться</string>
+    <string name="followerfragment_titlefollowing">"Пользователи подписанные на "</string>
+    <string name="followerfragment_titlefollower">" подписался на :"</string>
+    <string name="progressdialog_dataupdate">Обновление данных</string>
+    <string name="unregisteruserbroadcastreceiver_overtime">Время сессии истекло, пожалуйста перелогинтесь</string>
+    <string name="saveddialog_titlesavepattern">Сохранить паттерн на сервер</string>
+    <string name="cleardialog_title">Очистить холст</string>
+    <string name="nav_header_authority">Авторизация</string>
+    <string name="nav_login">Войти</string>
+    <string name="nav_logout">Выйти</string>
+    <string name="nicknamefragment_intutlogin">Введите никнейм</string>
+    <string name="timeutils_weekago">неделю назад</string>
+    <string name="timeutils_over">"более "</string>
+    <string name="timeutils_21weeksago">" недели назад"</string>
+    <string name="timeutils_weeksago">" недель назад"</string>
+    <string name="timeutils_rightnow">только что</string>
+    <string name="timeutils_minago">минуту назад</string>
+    <string name="timeutils_hourago">час назад</string>
+    <string name="R.string.timeutils_dayago">день назад</string>
+    <string name="timeutils_21daysago">" дня назад"</string>
+    <string name="timeutils_daysago">" дней назад"</string>
+    <string name="timeutils_21hoursago">" час назад"</string>
+    <string name="timeutils_hoursago">" часов назад"</string>
+    <string name="timeutils_21minutsago">" минуты назад"</string>
+    <string name="timeutils_minutsago">" минут назад"</string>
+    <string name="basepatternfragment_tilpostcomment">Напишите комментарий</string>
+    <string name="fragment_authoruty_title">Войти через:</string>
+
+    <string-array name="savedialog_arraylayer">
+        <item>Нет</item>
+        <item>Сглаживание</item>
+        <item>Плитка</item>
+        <item>Вышивка</item>
+        <item>Вязание</item>
+    </string-array>
+</resources>

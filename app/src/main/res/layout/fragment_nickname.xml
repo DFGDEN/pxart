@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/drawer_header"
+        android:gravity="bottom"
+        android:orientation="vertical"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilEdtNick"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/edtNick" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить Никнейм"
+        android:id="@+id/btnConfirmNick"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
