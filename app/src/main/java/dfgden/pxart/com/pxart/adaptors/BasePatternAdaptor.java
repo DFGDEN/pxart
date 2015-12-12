@@ -510,7 +510,7 @@ public abstract class BasePatternAdaptor extends RecyclerView.Adapter<RecyclerVi
 
         Canvas c = new Canvas(b);
         Paint p = new Paint(Paint.ANTI_ALIAS_FLAG);
-        Bitmap scaledBitmap = Bitmap.createScaledBitmap(image,image.getWidth()*(displaymetrics.densityDpi /160),image.getHeight()*(displaymetrics.densityDpi /160),false);
+        Bitmap scaledBitmap = Bitmap.createScaledBitmap(image,image.getWidth()*(displaymetrics.densityDpi /160)/ REDUCE_PATTERN_PARAMETER,image.getHeight()*(displaymetrics.densityDpi /160)/ REDUCE_PATTERN_PARAMETER,false);
         for (int i = 0; i < displaymetrics.widthPixels/(displaymetrics.densityDpi /160)* SCALE_WALLPAPER_PARAMETER; i += scaledBitmap.getWidth()) {
             for (int j = 0; j < displaymetrics.heightPixels/(displaymetrics.densityDpi /160)* SCALE_WALLPAPER_PARAMETER; j += scaledBitmap.getHeight()) {
                 c.drawBitmap(scaledBitmap, i, j, p);
